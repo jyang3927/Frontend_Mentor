@@ -1,0 +1,153 @@
+body {
+    margin: 0; 
+    background-image: url('images/bg-mobile.svg'); 
+    background-size: 100% 50%; 
+    background-repeat: no-repeat; 
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    color: white; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; 
+}
+
+/* Main styles */
+main {
+    height: 100%; 
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px; 
+}
+
+p {
+    font-weight: 400; 
+    line-height: 1.75;
+    font-size: 16px; 
+    margin-top: 0;  
+}
+
+button {
+    color: hsl(257, 40%, 49%); 
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px; 
+    padding: 13px 70px; 
+    border: none; 
+    width: auto; 
+    height: auto;
+    margin: 12px 50px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4); 
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.icons-row {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    margin-top: 70px; 
+}
+
+/* alignment */
+.mainBody {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-content: center;
+    margin: 40px 35px; 
+}
+.textAlign {
+    text-align: center;
+}
+/* images and icons */
+.logo {
+    height: 30px; 
+    padding: 30px 0 20px 35px; 
+}
+
+.icons {
+    height: 30px; 
+    width: 30px; 
+    filter:brightness(0) invert(1); 
+    padding: 7px; 
+}
+
+
+/* attribution */
+.attribution {
+    display: none; 
+}
+/* media queries */
+@media screen and (min-width:376px) {
+    body {
+        background-image: url('images/bg-desktop.svg');
+        background-size: cover; 
+        background-repeat:no-repeat;
+        height: 100vh; 
+    }
+    header {
+        padding-top: 10px; 
+        margin-bottom: 50px; 
+    }
+    .logo {
+        height: 50px; 
+        margin-left: 50px; 
+    }
+    main {
+        display: flex; 
+        flex-direction: row; 
+        margin: 0 50px; 
+        height: 100%; 
+    }
+
+    .mainBody {
+        flex: 1; 
+        justify-content: flex-start; 
+        margin-top: 0; 
+    }
+
+
+    .textAlign {
+        text-align: start;
+    }
+
+    h1 {
+        padding-right: 300px; 
+    }
+
+    p {
+        padding-right: 100px; 
+    }
+    button {
+        margin-left: 0; 
+        margin-right: 400px; 
+    }
+
+
+    .icons-row {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-end;
+        margin-top: 200px; 
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        padding: 5px; 
+    }
+    
+    .mainBody-desktop {
+        display: flex; 
+        flex-direction: column; 
+        flex:1;
+    }
+
+}
